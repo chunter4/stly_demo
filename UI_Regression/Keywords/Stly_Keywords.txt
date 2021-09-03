@@ -14,9 +14,9 @@ Search For Item
 
 Select Search Result Item
     [Arguments]    ${search_res_num}
-    Wait Until Element Is Visible    ${searchRes}${search_res_num}]    timeout=${WEB_TIMEOUT}
-    Wait Until Element Is Enabled    ${searchRes}${search_res_num}]    timeout=${WEB_TIMEOUT}
-    Click Element    ${searchRes}${search_res_num}]
+    Wait Until Element Is Visible    ${searchRes}[${search_res_num}]    timeout=${WEB_TIMEOUT}
+    Wait Until Element Is Enabled    ${searchRes}[${search_res_num}]    timeout=${WEB_TIMEOUT}
+    Click Element    ${searchRes}[${search_res_num}]
 
 Click an Element
     [Arguments]    ${element}
