@@ -24,7 +24,7 @@ ${ENVIRONMENT}                      Temp   #QA|Production
 
 *** Keywords ***
 Set URL And User Credentials
-    Run Keyword If    '${ENVIRONMENT}'=='Production'    Set Global Variable    ${URL}    http://www.potterybarn.com
+    Run Keyword If    '${ENVIRONMENT}'=='Test'    Set Global Variable    ${URL}    http://
     log    URL to execute against: ${URL}    console=yes
 
 Create Browser Instance

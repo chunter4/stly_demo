@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation       Pottery Barn Sanity Test Suite
 Resource            ../Resource.txt
-Resource            ./Objects/PB_Objects.txt
-Resource            ./Keywords/PB_Keywords.txt
+Resource            ./Objects/Stly_Objects.txt
+Resource            ./Keywords/Stly_Keywords.txt
 
 Suite Setup         Set URL And User Credentials
 Suite Teardown      Close All Browsers

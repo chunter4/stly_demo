@@ -1,7 +1,7 @@
 *** Settings ***
 Library                 Selenium2Library
 
-Resource                ../Objects/PB_Objects.txt
+Resource                ../Objects/Stly_Objects.txt
 
 
 *** Keywords ***
