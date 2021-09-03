@@ -15,7 +15,7 @@ ${searchBox}                        //*[@id="search-field"]
 ${popUpAd}                          //*[@id="home"]/div[10]/div/a
 
 #---Search Results---
-${searchRes}                       //body/div[@data-style='app']/div[@class='product-discovery search-main-container']/div[@data-style='products-result']/div[@class='search-container']/section[@class='search-page']/div[@class='container']/div[
+${searchRes}                       //body/div[@data-style='app']/div[@class='product-discovery search-main-container']/div[@data-style='products-result']/div[@class='search-container']/section[@class='search-page']/div[@class='container']/div
 ${itemOneQty}                      //div[@id='productSubsetItem1']//input[@placeholder='QTY']
 ${itemTwoQty}                      //div[@id='productSubsetItem2']//input[@placeholder='QTY']
 ${itemOneColorOne}                 //*[@id="productSubsetItem1"]/div/div/div[1]/ul[2]/li[1]/a/img

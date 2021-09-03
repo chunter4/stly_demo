@@ -20,4 +20,4 @@
     - Modify the Resource.txt file, if needed (logins/passwords/urls/email addresses)
     - Make sure to execute the automation from the project's root directory
     - UI Regression Test - Execute by running the following command:
-        - "robot --outputdir Results\Stly_Regression --output output.xml --variable ENVIRONMENT:Production UI_Regression\Stly_Sanity.robot"
+        - "robot --outputdir Results\Stly_Regression --output output.xml --variable ENVIRONMENT:Test UI_Regression\Stly_Sanity.robot"

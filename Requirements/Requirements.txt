@@ -1,27 +1,18 @@
 ###### Requirements with Version Specifiers ######
-robotframework == 3.2.2
+robotframework
 robotframework-seleniumlibrary
-robotframework-selenium2library == 3.0.0
-robotframework-requests
+robotframework-selenium2library
 robotframework-excellib
-robotframework-databaselibrary
 robotframework-openpyxllib
 robotframework-httplibrary
 robotframework-screencaplibrary
-selenium == 3.141.0
+selenium
 setuptools
 xlrd
-xlutils
-pyodbc
-pymssql
-xlwt
 openpyxl
 XlsxWriter
 xlutils
-natsort
-pymsgbox == 1.0.6
-pyscreeze
-pytweening
+
 
 #
 ###### Requirements with Version Specifiers ######
