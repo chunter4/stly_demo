@@ -1,0 +1,47 @@
+*** Settings ***
+Library                 Selenium2Library
+
+Resource                ../Objects/PB_Objects.txt
+
+
+*** Keywords ***
+Search For Item
+    [Arguments]    ${searchStr}
+    Wait Until Element Is Visible    ${searchBox}    timeout=${WEB_TIMEOUT}
+    Wait Until Element Is Enabled    ${searchBox}    timeout=${WEB_TIMEOUT}
+    Input Text    ${searchBox}    ${searchStr}
+    Press Keys    ${searchBox}    ENTER
+
+Select Search Result Item
+    [Arguments]    ${search_res_num}
+    Wait Until Element Is Visible    ${searchRes}${search_res_num}]    timeout=${WEB_TIMEOUT}
+    Wait Until Element Is Enabled    ${searchRes}${search_res_num}]    timeout=${WEB_TIMEOUT}
+    Click Element    ${searchRes}${search_res_num}]
+
+Click an Element
+    [Arguments]    ${element}
+    Wait Until Element Is Visible    ${element}    timeout=${WEB_TIMEOUT}
+    Wait Until Element Is Enabled    ${element}    timeout=${WEB_TIMEOUT}
+    Click Element    ${element}
+
+Input Text Into Field
+    [Arguments]    ${element}    ${text}
+    Wait Until Element Is Visible    ${element}    timeout=${WEB_TIMEOUT}
+    Wait Until Element Is Enabled    ${element}    timeout=${WEB_TIMEOUT}
+    Input Text    ${element}    ${text}
+
+Return Shadow DOM Element
+    [Arguments]    ${shadowDOMPath}
+    ${pass_fail}    ${shadowElem}    Run Keyword And Ignore Error    Execute JavaScript    return ${shadowDOMPath}
+
+    FOR  ${count}  IN RANGE  0  ${WEB_TIMEOUT}
+        Exit For Loop If    '${shadowElem}'!='None'
+        Sleep    1s
+        ${pass_fail}    ${shadowElem}    Run Keyword And Ignore Error    Execute JavaScript    return ${shadowDOMPath}
+    END
+
+    Sleep    1s
+
+    Scroll Element Into View    ${shadowElem}
+
+    [Return]    ${shadowElem}

@@ -1,0 +1,56 @@
+*** Variables ***
+#---Header---
+${searchBox}                        //*[@id="search-field"]
+
+#---Footer---
+
+
+#---Login Page---
+
+
+#---Home Page---
+
+
+#---Pop Up---
+${popUpAd}                          //*[@id="home"]/div[10]/div/a
+
+#---Search Results---
+${searchRes}                       //body/div[@data-style='app']/div[@class='product-discovery search-main-container']/div[@data-style='products-result']/div[@class='search-container']/section[@class='search-page']/div[@class='container']/div[
+${itemOneQty}                      //div[@id='productSubsetItem1']//input[@placeholder='QTY']
+${itemTwoQty}                      //div[@id='productSubsetItem2']//input[@placeholder='QTY']
+${itemOneColorOne}                 //*[@id="productSubsetItem1"]/div/div/div[1]/ul[2]/li[1]/a/img
+${itemTwoColorOne}                 //*[@id="productSubsetItem2"]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/a/img
+${addToCartButton}                 //button[@id='primaryGroup_addToCart_0']
+
+#---Shopping Cart Preview---
+${contShoppingButton}              //a[@role='button'][normalize-space()='Continue Shopping']
+${checkoutButton}                  //*[@id="anchor-btn-checkout"]
+
+#---Shopping Cart---
+${ccRadioDial}                     //span[@class='logo-group']
+${checkoutButtonCart}              //button[normalize-space()='Checkout']
+
+#---Sign In---
+${guestCheckoutButton}             //button[normalize-space()='Guest Checkout']
+
+#---Checkout---
+${checkoutFullName}                //*[@id="fullName"]
+${checkoutAddress}                 //*[@id="line1"]
+${checkoutAddressErr}              //*[@id="shipping-line1-error"]
+${checkoutCity}                    //*[@id="city"]
+${checkoutCityErr}                 //*[@id="shipping-city-error"]
+${checkoutState}                   //*[@id="shipping"]/form/div[1]/div[2]/checkout-state-province-select-ui/div/select
+${checkoutStateErr}                //*[@id="shipping-state"]
+${checkoutZip}                     //address-form-feature[@id='shipping']//input[@id='postalCode']
+${checkoutZipErr}                  //*[@id="shipping-zip-error"]
+${checkoutPhone}                   //*[@id="phone"]
+${checkoutShippingCont}            //address-form-feature[@id='shipping']//button-ui[@name='submit']
+${checkoutShipCont}                document.querySelector('checkout-app').shadowRoot.querySelector('delivery-view').shadowRoot.querySelector('button-ui');
+${checkoutPlaceOrder}              document.querySelector('checkout-app').shadowRoot.querySelector('payment-region').shadowRoot.querySelector('place-order-view').shadowRoot.querySelector('button-ui');
+${checkoutEmailErr1}               document.querySelector('checkout-app').shadowRoot.querySelector('payment-region').shadowRoot.querySelector('place-order-view').shadowRoot.querySelector('error-message-ui');
+${checkoutEmailErr2}               //*[@id="email-form-email-error"]
+${checkoutEmail}                   //*[@id="email"]
+${checkoutErr}                     document.querySelector('checkout-app').shadowRoot.querySelector('payment-region').shadowRoot.querySelector('credit-card-view').shadowRoot.querySelector('credit-card-payment-feature').shadowRoot.querySelector('error-message-ui');
+${checkoutCCNum}                   //*[@id="creditCardNumber"]
+${checkoutCCExp}                   //*[@id="expiration"]
+${checkoutCCCVN}                   //*[@id="cvn"]

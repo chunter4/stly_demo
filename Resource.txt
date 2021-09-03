@@ -1,0 +1,33 @@
+*** Settings ***
+Documentation                     Includes all the Library and Resource files
+Library                           Selenium2Library
+Library                           Collections
+Library                           RequestsLibrary
+Library                           ExcelLibrary
+Library                           Dialogs
+Library                           OperatingSystem
+Library                           robot.api.logger
+Library                           DateTime
+Library                           ScreenCapLibrary
+Library                           openpyxl
+
+
+*** Variables ***
+${SEL_SPEED}                        0.2s
+${STD_WAIT}                         15
+${WEB_TIMEOUT}                      120
+${BROWSER}                          chrome  #firefox|safari|IE|chrome|headlesschrome
+${browser_width}                    1920
+${browser_height}                   1080
+${ENVIRONMENT}                      Temp   #QA|Production
+
+
+*** Keywords ***
+Set URL And User Credentials
+    Run Keyword If    '${ENVIRONMENT}'=='Production'    Set Global Variable    ${URL}    http://www.potterybarn.com
+    log    URL to execute against: ${URL}    console=yes
+
+Create Browser Instance
+    [Arguments]    ${Link}
+    Open Browser    ${Link}    ${BROWSER}    options=add_argument("--ignore-certificate-errors")
+    Set Window Size    ${browser_width}    ${browser_height}
