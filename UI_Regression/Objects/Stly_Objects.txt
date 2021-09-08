@@ -1,56 +1,48 @@
 *** Variables ***
-#---Header---
-${searchBox}                        //*[@id="search-field"]
-
-#---Footer---
-
-
 #---Login Page---
-
+${input_login}                                      //*[@id="__layout"]/div/div/div[1]/div[2]/div[3]/input
+${input_password}                                   //*[@id="__layout"]/div/div/div[1]/div[2]/div[5]/input
+${button_login}                                     //*[@id="__layout"]/div/div/div[1]/div[2]/button
 
 #---Home Page---
+${tab_reports}                                      //*[@id="header-reports"]/div
 
+#---Reports----
+${checkbox_seconditem}                              //*[@id="reports-list-main-content"]/div[2]/div[3]/div[2]/div[1]/input
+${button_createreport}                              //*[@id="reports-list-main-content"]/div[1]/div[3]/button
 
-#---Pop Up---
-${popUpAd}                          //*[@id="home"]/div[10]/div/a
+${radiodial_reportgen_perfdetailreport}             //*[@id="performanceDetailReportOption"]/div/div[1]/input
 
-#---Search Results---
-${searchRes}                       //body/div[@data-style='app']/div[@class='product-discovery search-main-container']/div[@data-style='products-result']/div[@class='search-container']/section[@class='search-page']/div[@class='container']/div
-${itemOneQty}                      //div[@id='productSubsetItem1']//input[@placeholder='QTY']
-${itemTwoQty}                      //div[@id='productSubsetItem2']//input[@placeholder='QTY']
-${itemOneColorOne}                 //*[@id="productSubsetItem1"]/div/div/div[1]/ul[2]/li[1]/a/img
-${itemTwoColorOne}                 //*[@id="productSubsetItem2"]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/a/img
-${addToCartButton}                 //button[@id='primaryGroup_addToCart_0']
+${dropdown_reportgen_grouping}                      //*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select
+${dropdown_reportgen_grouping_campaign}             //*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select/option[1]
+${dropdown_reportgen_grouping_order}                //*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select/option[2]
+${dropdown_reportgen_grouping_budgetgroup}          //*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select/option[3]
 
-#---Shopping Cart Preview---
-${contShoppingButton}              //a[@role='button'][normalize-space()='Continue Shopping']
-${checkoutButton}                  //*[@id="anchor-btn-checkout"]
+${dropdown_reportgen_costbasis}                     //*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select
+${dropdown_reportgen_costbasis_cpv}                 //*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select/option[1]
+${dropdown_reportgen_costbasis_cpm}                 //*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select/option[2]
+${dropdown_reportgen_costbasis_all}                 //*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select/option[3]
 
-#---Shopping Cart---
-${ccRadioDial}                     //span[@class='logo-group']
-${checkoutButtonCart}              //button[normalize-space()='Checkout']
+${dropdown_reportgen_granularity}                   //*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select
+${dropdown_reportgen_granularity_summary}           //*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select/option[1]
+${dropdown_reportgen_granularity_daily}             //*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select/option[2]
+${dropdown_reportgen_granularity_weekly}            //*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select/option[3]
+${dropdown_reportgen_granularity_monthly}           //*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select/option[4]
+${dropdown_reportgen_granularity_yearly}            //*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select/option[5]
 
-#---Sign In---
-${guestCheckoutButton}             //button[normalize-space()='Guest Checkout']
+${dropdown_reportgen_addtlcolumns}                  //*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select
+${dropdown_reportgen_addtlcolumns_none}             //*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select/option[1]
+${dropdown_reportgen_addtlcolumns_creativename}     //*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select/option[2]
+${dropdown_reportgen_addtlcolumns_device}           //*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select/option[3]
+${dropdown_reportgen_addtlcolumns_creatnamedevice}    //*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select/option[4]
+${dropdown_reportgen_addtlcolumns_margin}           //*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select/option[5]
 
-#---Checkout---
-${checkoutFullName}                //*[@id="fullName"]
-${checkoutAddress}                 //*[@id="line1"]
-${checkoutAddressErr}              //*[@id="shipping-line1-error"]
-${checkoutCity}                    //*[@id="city"]
-${checkoutCityErr}                 //*[@id="shipping-city-error"]
-${checkoutState}                   //*[@id="shipping"]/form/div[1]/div[2]/checkout-state-province-select-ui/div/select
-${checkoutStateErr}                //*[@id="shipping-state"]
-${checkoutZip}                     //address-form-feature[@id='shipping']//input[@id='postalCode']
-${checkoutZipErr}                  //*[@id="shipping-zip-error"]
-${checkoutPhone}                   //*[@id="phone"]
-${checkoutShippingCont}            //address-form-feature[@id='shipping']//button-ui[@name='submit']
-${checkoutShipCont}                document.querySelector('checkout-app').shadowRoot.querySelector('delivery-view').shadowRoot.querySelector('button-ui');
-${checkoutPlaceOrder}              document.querySelector('checkout-app').shadowRoot.querySelector('payment-region').shadowRoot.querySelector('place-order-view').shadowRoot.querySelector('button-ui');
-${checkoutEmailErr1}               document.querySelector('checkout-app').shadowRoot.querySelector('payment-region').shadowRoot.querySelector('place-order-view').shadowRoot.querySelector('error-message-ui');
-${checkoutEmailErr2}               //*[@id="email-form-email-error"]
-${checkoutEmail}                   //*[@id="email"]
-${checkoutErr}                     document.querySelector('checkout-app').shadowRoot.querySelector('payment-region').shadowRoot.querySelector('credit-card-view').shadowRoot.querySelector('credit-card-payment-feature').shadowRoot.querySelector('error-message-ui');
-${checkoutCCNum}                   //*[@id="creditCardNumber"]
-${checkoutCCExp}                   //*[@id="expiration"]
-${checkoutCCCVN}                   //*[@id="cvn"]
+${dropdown_reportgen_timeperiod}                    //*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select
+${dropdown_reportgen_timeperiod_lastweek}           //*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[1]
+${dropdown_reportgen_timeperiod_yest}               //*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[2]
+${dropdown_reportgen_timeperiod_thismonth}          //*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[3]
+${dropdown_reportgen_timeperiod_lastmonth}          //*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[4]
+${dropdown_reportgen_timeperiod_alltime}            //*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[5]
+${dropdown_reportgen_timeperiod_custom}             //*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[6]
+
+${button_reportgen_runreports}                  //*[@id="modal-container"]/div[2]/div[3]/button
