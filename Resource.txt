@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation                     Includes all the Library and Resource files
 Library                           Selenium2Library
+Library                           String
 Library                           Collections
 Library                           RequestsLibrary
 Library                           ExcelLibrary
@@ -10,6 +11,7 @@ Library                           robot.api.logger
 Library                           DateTime
 Library                           ScreenCapLibrary
 Library                           openpyxl
+Library                           PythonLib/Excel.py
 
 
 *** Variables ***
@@ -19,7 +21,7 @@ ${WEB_TIMEOUT}                      120
 ${BROWSER}                          chrome  #firefox|safari|IE|chrome|headlesschrome
 ${browser_width}                    1920
 ${browser_height}                   1080
-${ENVIRONMENT}                      Temp   #QA|Production
+${ENVIRONMENT}                      Temp   #QA|Staging|Production
 
 
 *** Keywords ***
@@ -30,18 +32,36 @@ Set URL And User Credentials
 Create Browser Instance
     [Arguments]    ${Link}
 
+    #Set the download directory and empty it
     Set Global Variable    ${global_downloadDir}    ${CURDIR}\\TestData\\Downloads
-    #Modify Chrome so it downloads PDFs instead of viewing them
-    #${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
-    #${prefs}  Create Dictionary  download.prompt_for_download=${FALSE}  download.default_directory=${global_downloadDir}
-    #Call Method  ${chrome_options}  add_experimental_option  prefs  ${prefs}
+    Empty Directory    ${global_downloadDir}
 
-    #run keyword if  "${test_type}" == "Local" or "${test_local}" == "True"  Open Browser  ${LOGINURL}  ${browserName}  options=${chrome_options}
+    #Modify Chrome so it downloads files instead of viewing them
+    ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    ${prefs}  Create Dictionary  download.prompt_for_download=${FALSE}  download.default_directory=${global_downloadDir}
+    Call Method  ${chrome_options}  add_experimental_option  prefs  ${prefs}
 
-    Open Browser    ${Link}    ${BROWSER}    options=add_argument("--ignore-certificate-errors"); add_experimental_option("download.prompt_for_download", ${False});  add_experimental_option("download.default_directory", ${global_downloadDir})
-    Set Window Size    ${browser_width}    ${browser_height}
+    Open Browser    ${Link}    ${BROWSER}    options=${chrome_options}
+    Maximize Browser Window
+    #Set Window Size    ${browser_width}    ${browser_height}
 
 Login to TargetView
     Input Text Into Field    ${input_login}    ${stly_username}
     Input Text Into Field    ${input_password}    ${stly_password}
     Click an Element    ${button_login}
+
+Download Should Be Done
+    [Arguments]    ${directory}=${global_downloadDir}
+    [Documentation]    Verifies that the directory has only one folder and it is not a temp file and returns path to the file
+    ${files} =    List Files In Directory    ${directory}
+    Length Should Be    ${files}    1
+    Should Not Match Regexp    ${files[0]}    (?i).*\\.tmp
+    Should Not Match Regexp    ${files[0]}    (?i).*\\.crdownload
+    ${file}    Join Path    ${directory}    ${files[0]}
+    Log    File was successfully downloaded to ${file}
+    [Return]    ${file}
+
+Wait Until File Download is Finished
+    [Arguments]    ${directory}=${global_downloadDir}    ${timeout}=${WEB_TIMEOUT}    ${retry}=2s
+    ${fileName} =    Wait Until Keyword Succeeds    ${timeout}    ${retry}    Download should be done    ${directory}
+    [Return]    ${fileName}

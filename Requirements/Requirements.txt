@@ -12,6 +12,7 @@ xlrd
 openpyxl
 XlsxWriter
 xlutils
+pandas
 
 
 #
