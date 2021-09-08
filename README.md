@@ -1,6 +1,5 @@
 # Dev Environment Setup
     - Clone this repository to a clean Windows 10 machine
-    - We assume the latest Google Chrome is already installed
     - Install Python 3.7 (in Requirements directory) and PIP
     - Install PyCharm Community Edition (https://www.jetbrains.com/pycharm/download/)
         - Open the repository in PyCharm
@@ -11,8 +10,8 @@
 # Execution Environment Setup
     - Clone this repository to a clean Windows 10 machine
     - Navigate to the 'Requirements' directory
-    - Run the command "powershell.exe -File Install_Python.ps1"
-        - Copies the correct chromedriver.exe into the Python path (get the latest version here: https://chromedriver.storage.googleapis.com/index.html)
+    - Run the script "Install_Chrome_ChromeDriver.sh" (setup for Linux nodes)
+        - Downloads the latest chrome, isntalls it and downloads the matching chromedriver.exe
     - Run the command "python Install_Dependencies.py"
         - PIP installs all project dependencies per 'Requirements.txt'
 
