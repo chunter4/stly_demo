@@ -20,7 +20,7 @@ Return Column Compare List
 
 
 *** Test Cases ***
-Order Sanity Test
+Create and Save Performance Detail Report
     Create Browser Instance    ${URL}
     Login to TargetView
 
@@ -57,14 +57,18 @@ Order Sanity Test
 
     #Wait until the file completes downloading and return the filename
     ${filename}=    Wait Until File Download is Finished
+    Set Suite Variable    ${filename}    ${filename}
 
+Compare Against a Good Baseline
     #Get the list of columns to compare
     ${col_list}=    Return Column Compare List
 
-    #Compare against a known good baseline
     ${result}=    compare_excel_files    ${good_baseline_xlsx}    ${filename}    6    ${col_list}
     Run Keyword If    ${result}==${False}    fail    Differences found comparing xlsx files!
 
-    #Compare against a known bad baseline
+Compare Against a Bad Baseline
+    #Get the list of columns to compare
+    ${col_list}=    Return Column Compare List
+
     ${result}=    compare_excel_files    ${bad_baseline_xlsx}    ${filename}    6    ${col_list}
     Run Keyword If    ${result}==${False}    fail    Differences found comparing xlsx files!
