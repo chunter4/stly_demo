@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20210908 00:26:23.825" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20210908 09:17:01.533" rpa="false">
 <suite id="s1" name="Stly Sanity" source="C:\Users\chunter4\Documents\GitHub\stly_demo\UI_Regression\Stly_Sanity.robot">
 <kw name="Set URL And User Credentials" library="Resource" type="setup">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -16,10 +16,10 @@
 <arg>${URL}</arg>
 <arg>https://staging-newtargetview.sightly.com/</arg>
 </arguments>
-<msg timestamp="20210908 00:26:25.385" level="INFO">${URL} = https://staging-newtargetview.sightly.com/</msg>
-<status status="PASS" starttime="20210908 00:26:25.383" endtime="20210908 00:26:25.386"></status>
+<msg timestamp="20210908 09:17:02.930" level="INFO">${URL} = https://staging-newtargetview.sightly.com/</msg>
+<status status="PASS" starttime="20210908 09:17:02.927" endtime="20210908 09:17:02.930"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:25.382" endtime="20210908 00:26:25.386"></status>
+<status status="PASS" starttime="20210908 09:17:02.927" endtime="20210908 09:17:02.930"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
@@ -27,10 +27,10 @@
 <arg>URL to execute against: ${URL}</arg>
 <arg>console=yes</arg>
 </arguments>
-<msg timestamp="20210908 00:26:25.386" level="INFO">URL to execute against: https://staging-newtargetview.sightly.com/</msg>
-<status status="PASS" starttime="20210908 00:26:25.386" endtime="20210908 00:26:25.387"></status>
+<msg timestamp="20210908 09:17:02.930" level="INFO">URL to execute against: https://staging-newtargetview.sightly.com/</msg>
+<status status="PASS" starttime="20210908 09:17:02.930" endtime="20210908 09:17:02.931"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:25.381" endtime="20210908 00:26:25.387"></status>
+<status status="PASS" starttime="20210908 09:17:02.927" endtime="20210908 09:17:02.932"></status>
 </kw>
 <test id="s1-t1" name="Order Sanity Test">
 <kw name="Set Selenium Timeout" library="Selenium2Library" type="setup">
@@ -38,7 +38,7 @@
 <arguments>
 <arg>${STD_WAIT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:25.389" endtime="20210908 00:26:25.389"></status>
+<status status="PASS" starttime="20210908 09:17:02.932" endtime="20210908 09:17:02.932"></status>
 </kw>
 <kw name="Create Browser Instance" library="Resource">
 <arguments>
@@ -50,17 +50,17 @@
 <arg>${global_downloadDir}</arg>
 <arg>C:\\Users\\chunter4\\Documents\\GitHub\\stly_demo\\TestData\\Downloads</arg>
 </arguments>
-<msg timestamp="20210908 00:26:25.395" level="INFO">${global_downloadDir} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads</msg>
-<status status="PASS" starttime="20210908 00:26:25.391" endtime="20210908 00:26:25.395"></status>
+<msg timestamp="20210908 09:17:02.934" level="INFO">${global_downloadDir} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads</msg>
+<status status="PASS" starttime="20210908 09:17:02.933" endtime="20210908 09:17:02.934"></status>
 </kw>
 <kw name="Empty Directory" library="OperatingSystem">
 <doc>Deletes all the content from the given directory.</doc>
 <arguments>
 <arg>${global_downloadDir}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:25.396" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
-<msg timestamp="20210908 00:26:25.399" level="INFO" html="yes">Emptied directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20210908 00:26:25.396" endtime="20210908 00:26:25.400"></status>
+<msg timestamp="20210908 09:17:02.935" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
+<msg timestamp="20210908 09:17:02.937" level="INFO" html="yes">Emptied directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20210908 09:17:02.935" endtime="20210908 09:17:02.937"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -71,8 +71,8 @@
 <assign>
 <var>${chrome_options}</var>
 </assign>
-<msg timestamp="20210908 00:26:25.401" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002A863489F48&gt;</msg>
-<status status="PASS" starttime="20210908 00:26:25.400" endtime="20210908 00:26:25.401"></status>
+<msg timestamp="20210908 09:17:02.938" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000021C7C439EC8&gt;</msg>
+<status status="PASS" starttime="20210908 09:17:02.937" endtime="20210908 09:17:02.938"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -83,8 +83,8 @@
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20210908 00:26:25.402" level="INFO">${prefs} = {'download.prompt_for_download': False, 'download.default_directory': 'C:\\Users\\chunter4\\Documents\\GitHub\\stly_demo\\TestData\\Downloads'}</msg>
-<status status="PASS" starttime="20210908 00:26:25.401" endtime="20210908 00:26:25.403"></status>
+<msg timestamp="20210908 09:17:02.938" level="INFO">${prefs} = {'download.prompt_for_download': False, 'download.default_directory': 'C:\\Users\\chunter4\\Documents\\GitHub\\stly_demo\\TestData\\Downloads'}</msg>
+<status status="PASS" starttime="20210908 09:17:02.938" endtime="20210908 09:17:02.938"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -94,7 +94,7 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:25.403" endtime="20210908 00:26:25.403"></status>
+<status status="PASS" starttime="20210908 09:17:02.938" endtime="20210908 09:17:02.939"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -103,14 +103,14 @@
 <arg>${BROWSER}</arg>
 <arg>options=${chrome_options}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:25.405" level="INFO">Opening browser 'chrome' to base url 'https://staging-newtargetview.sightly.com/'.</msg>
-<status status="PASS" starttime="20210908 00:26:25.404" endtime="20210908 00:26:32.664"></status>
+<msg timestamp="20210908 09:17:02.939" level="INFO">Opening browser 'chrome' to base url 'https://staging-newtargetview.sightly.com/'.</msg>
+<status status="PASS" starttime="20210908 09:17:02.939" endtime="20210908 09:17:08.271"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210908 00:26:32.665" endtime="20210908 00:26:32.909"></status>
+<status status="PASS" starttime="20210908 09:17:08.273" endtime="20210908 09:17:08.429"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:25.391" endtime="20210908 00:26:32.910"></status>
+<status status="PASS" starttime="20210908 09:17:02.933" endtime="20210908 09:17:08.430"></status>
 </kw>
 <kw name="Login to TargetView" library="Resource">
 <kw name="Input Text Into Field" library="Stly_Keywords">
@@ -124,7 +124,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:32.914" endtime="20210908 00:26:33.154"></status>
+<status status="PASS" starttime="20210908 09:17:08.435" endtime="20210908 09:17:08.546"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -132,7 +132,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:33.157" endtime="20210908 00:26:33.242"></status>
+<status status="PASS" starttime="20210908 09:17:08.546" endtime="20210908 09:17:08.578"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -140,10 +140,10 @@
 <arg>${element}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:33.243" level="INFO">Typing text 'nick@sightly.com' into text field '//*[@id="__layout"]/div/div/div[1]/div[2]/div[3]/input'.</msg>
-<status status="PASS" starttime="20210908 00:26:33.242" endtime="20210908 00:26:33.491"></status>
+<msg timestamp="20210908 09:17:08.578" level="INFO">Typing text 'nick@sightly.com' into text field '//*[@id="__layout"]/div/div/div[1]/div[2]/div[3]/input'.</msg>
+<status status="PASS" starttime="20210908 09:17:08.578" endtime="20210908 09:17:08.742"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:32.912" endtime="20210908 00:26:33.492"></status>
+<status status="PASS" starttime="20210908 09:17:08.432" endtime="20210908 09:17:08.742"></status>
 </kw>
 <kw name="Input Text Into Field" library="Stly_Keywords">
 <arguments>
@@ -156,7 +156,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:33.493" endtime="20210908 00:26:33.541"></status>
+<status status="PASS" starttime="20210908 09:17:08.743" endtime="20210908 09:17:08.773"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -164,7 +164,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:33.541" endtime="20210908 00:26:33.596"></status>
+<status status="PASS" starttime="20210908 09:17:08.773" endtime="20210908 09:17:08.801"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -172,10 +172,10 @@
 <arg>${element}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:33.597" level="INFO">Typing text 'a' into text field '//*[@id="__layout"]/div/div/div[1]/div[2]/div[5]/input'.</msg>
-<status status="PASS" starttime="20210908 00:26:33.596" endtime="20210908 00:26:33.721"></status>
+<msg timestamp="20210908 09:17:08.802" level="INFO">Typing text 'a' into text field '//*[@id="__layout"]/div/div/div[1]/div[2]/div[5]/input'.</msg>
+<status status="PASS" starttime="20210908 09:17:08.801" endtime="20210908 09:17:08.889"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:33.492" endtime="20210908 00:26:33.722"></status>
+<status status="PASS" starttime="20210908 09:17:08.743" endtime="20210908 09:17:08.889"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -187,7 +187,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:33.723" endtime="20210908 00:26:33.767"></status>
+<status status="PASS" starttime="20210908 09:17:08.891" endtime="20210908 09:17:08.918"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -195,19 +195,19 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:33.767" endtime="20210908 00:26:33.805"></status>
+<status status="PASS" starttime="20210908 09:17:08.918" endtime="20210908 09:17:08.946"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:33.806" level="INFO">Clicking element '//*[@id="__layout"]/div/div/div[1]/div[2]/button'.</msg>
-<status status="PASS" starttime="20210908 00:26:33.806" endtime="20210908 00:26:33.914"></status>
+<msg timestamp="20210908 09:17:08.947" level="INFO">Clicking element '//*[@id="__layout"]/div/div/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20210908 09:17:08.947" endtime="20210908 09:17:09.018"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:33.722" endtime="20210908 00:26:33.915"></status>
+<status status="PASS" starttime="20210908 09:17:08.890" endtime="20210908 09:17:09.018"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:32.911" endtime="20210908 00:26:33.915"></status>
+<status status="PASS" starttime="20210908 09:17:08.431" endtime="20210908 09:17:09.018"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -219,7 +219,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:33.918" endtime="20210908 00:26:40.365"></status>
+<status status="PASS" starttime="20210908 09:17:09.019" endtime="20210908 09:17:11.801"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -227,17 +227,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:40.365" endtime="20210908 00:26:40.436"></status>
+<status status="PASS" starttime="20210908 09:17:11.801" endtime="20210908 09:17:11.828"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:40.438" level="INFO">Clicking element '//*[@id="header-reports"]/div'.</msg>
-<status status="PASS" starttime="20210908 00:26:40.437" endtime="20210908 00:26:40.661"></status>
+<msg timestamp="20210908 09:17:11.828" level="INFO">Clicking element '//*[@id="header-reports"]/div'.</msg>
+<status status="PASS" starttime="20210908 09:17:11.828" endtime="20210908 09:17:12.781"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:33.916" endtime="20210908 00:26:40.662"></status>
+<status status="PASS" starttime="20210908 09:17:09.018" endtime="20210908 09:17:12.782"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -249,7 +249,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:40.664" endtime="20210908 00:26:41.497"></status>
+<status status="PASS" starttime="20210908 09:17:12.783" endtime="20210908 09:17:13.574"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -257,17 +257,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:41.497" endtime="20210908 00:26:41.546"></status>
+<status status="PASS" starttime="20210908 09:17:13.574" endtime="20210908 09:17:13.672"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:41.547" level="INFO">Clicking element '//*[@id="reports-list-main-content"]/div[2]/div[3]/div[2]/div[1]/input'.</msg>
-<status status="PASS" starttime="20210908 00:26:41.547" endtime="20210908 00:26:41.722"></status>
+<msg timestamp="20210908 09:17:13.673" level="INFO">Clicking element '//*[@id="reports-list-main-content"]/div[2]/div[3]/div[2]/div[1]/input'.</msg>
+<status status="PASS" starttime="20210908 09:17:13.673" endtime="20210908 09:17:13.796"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:40.663" endtime="20210908 00:26:41.723"></status>
+<status status="PASS" starttime="20210908 09:17:12.782" endtime="20210908 09:17:13.797"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -279,7 +279,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:41.724" endtime="20210908 00:26:41.773"></status>
+<status status="PASS" starttime="20210908 09:17:13.798" endtime="20210908 09:17:13.841"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -287,17 +287,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:41.774" endtime="20210908 00:26:41.808"></status>
+<status status="PASS" starttime="20210908 09:17:13.841" endtime="20210908 09:17:13.877"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:41.808" level="INFO">Clicking element '//*[@id="reports-list-main-content"]/div[1]/div[3]/button'.</msg>
-<status status="PASS" starttime="20210908 00:26:41.808" endtime="20210908 00:26:41.874"></status>
+<msg timestamp="20210908 09:17:13.878" level="INFO">Clicking element '//*[@id="reports-list-main-content"]/div[1]/div[3]/button'.</msg>
+<status status="PASS" starttime="20210908 09:17:13.878" endtime="20210908 09:17:13.940"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:41.723" endtime="20210908 00:26:41.875"></status>
+<status status="PASS" starttime="20210908 09:17:13.797" endtime="20210908 09:17:13.940"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -309,7 +309,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:41.876" endtime="20210908 00:26:42.144"></status>
+<status status="PASS" starttime="20210908 09:17:13.941" endtime="20210908 09:17:14.182"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -317,17 +317,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.145" endtime="20210908 00:26:42.176"></status>
+<status status="PASS" starttime="20210908 09:17:14.182" endtime="20210908 09:17:14.207"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:42.177" level="INFO">Clicking element '//*[@id="performanceDetailReportOption"]/div/div[1]/input'.</msg>
-<status status="PASS" starttime="20210908 00:26:42.177" endtime="20210908 00:26:42.263"></status>
+<msg timestamp="20210908 09:17:14.208" level="INFO">Clicking element '//*[@id="performanceDetailReportOption"]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20210908 09:17:14.207" endtime="20210908 09:17:14.271"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:41.875" endtime="20210908 00:26:42.264"></status>
+<status status="PASS" starttime="20210908 09:17:13.941" endtime="20210908 09:17:14.271"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -339,7 +339,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.265" endtime="20210908 00:26:42.297"></status>
+<status status="PASS" starttime="20210908 09:17:14.272" endtime="20210908 09:17:14.364"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -347,17 +347,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.297" endtime="20210908 00:26:42.336"></status>
+<status status="PASS" starttime="20210908 09:17:14.364" endtime="20210908 09:17:14.393"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:42.337" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select'.</msg>
-<status status="PASS" starttime="20210908 00:26:42.337" endtime="20210908 00:26:42.419"></status>
+<msg timestamp="20210908 09:17:14.394" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select'.</msg>
+<status status="PASS" starttime="20210908 09:17:14.393" endtime="20210908 09:17:14.462"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:42.265" endtime="20210908 00:26:42.419"></status>
+<status status="PASS" starttime="20210908 09:17:14.272" endtime="20210908 09:17:14.463"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -369,7 +369,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.422" endtime="20210908 00:26:42.465"></status>
+<status status="PASS" starttime="20210908 09:17:14.465" endtime="20210908 09:17:14.502"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -377,17 +377,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.466" endtime="20210908 00:26:42.503"></status>
+<status status="PASS" starttime="20210908 09:17:14.503" endtime="20210908 09:17:14.531"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:42.504" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select/option[1]'.</msg>
-<status status="PASS" starttime="20210908 00:26:42.504" endtime="20210908 00:26:42.555"></status>
+<msg timestamp="20210908 09:17:14.531" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[1]/div[2]/select/option[1]'.</msg>
+<status status="PASS" starttime="20210908 09:17:14.531" endtime="20210908 09:17:14.560"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:42.421" endtime="20210908 00:26:42.556"></status>
+<status status="PASS" starttime="20210908 09:17:14.463" endtime="20210908 09:17:14.560"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -399,7 +399,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.558" endtime="20210908 00:26:42.597"></status>
+<status status="PASS" starttime="20210908 09:17:14.562" endtime="20210908 09:17:14.585"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -407,17 +407,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.598" endtime="20210908 00:26:42.633"></status>
+<status status="PASS" starttime="20210908 09:17:14.585" endtime="20210908 09:17:14.606"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:42.634" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select'.</msg>
-<status status="PASS" starttime="20210908 00:26:42.634" endtime="20210908 00:26:42.724"></status>
+<msg timestamp="20210908 09:17:14.607" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select'.</msg>
+<status status="PASS" starttime="20210908 09:17:14.607" endtime="20210908 09:17:14.669"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:42.557" endtime="20210908 00:26:42.725"></status>
+<status status="PASS" starttime="20210908 09:17:14.561" endtime="20210908 09:17:14.669"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -429,7 +429,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.727" endtime="20210908 00:26:42.767"></status>
+<status status="PASS" starttime="20210908 09:17:14.671" endtime="20210908 09:17:14.699"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -437,17 +437,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.767" endtime="20210908 00:26:42.795"></status>
+<status status="PASS" starttime="20210908 09:17:14.699" endtime="20210908 09:17:14.722"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:42.796" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select/option[3]'.</msg>
-<status status="PASS" starttime="20210908 00:26:42.796" endtime="20210908 00:26:42.842"></status>
+<msg timestamp="20210908 09:17:14.723" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[2]/div[2]/select/option[3]'.</msg>
+<status status="PASS" starttime="20210908 09:17:14.722" endtime="20210908 09:17:14.756"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:42.725" endtime="20210908 00:26:42.842"></status>
+<status status="PASS" starttime="20210908 09:17:14.670" endtime="20210908 09:17:14.756"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -459,7 +459,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.844" endtime="20210908 00:26:42.875"></status>
+<status status="PASS" starttime="20210908 09:17:14.757" endtime="20210908 09:17:14.783"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -467,17 +467,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.876" endtime="20210908 00:26:42.906"></status>
+<status status="PASS" starttime="20210908 09:17:14.783" endtime="20210908 09:17:14.807"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:42.906" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select'.</msg>
-<status status="PASS" starttime="20210908 00:26:42.906" endtime="20210908 00:26:42.988"></status>
+<msg timestamp="20210908 09:17:14.808" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select'.</msg>
+<status status="PASS" starttime="20210908 09:17:14.808" endtime="20210908 09:17:14.877"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:42.843" endtime="20210908 00:26:42.988"></status>
+<status status="PASS" starttime="20210908 09:17:14.757" endtime="20210908 09:17:14.877"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -489,7 +489,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:42.990" endtime="20210908 00:26:43.033"></status>
+<status status="PASS" starttime="20210908 09:17:14.879" endtime="20210908 09:17:14.914"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -497,17 +497,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.033" endtime="20210908 00:26:43.061"></status>
+<status status="PASS" starttime="20210908 09:17:14.914" endtime="20210908 09:17:14.943"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:43.062" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select/option[1]'.</msg>
-<status status="PASS" starttime="20210908 00:26:43.062" endtime="20210908 00:26:43.095"></status>
+<msg timestamp="20210908 09:17:14.944" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[3]/div[2]/select/option[1]'.</msg>
+<status status="PASS" starttime="20210908 09:17:14.943" endtime="20210908 09:17:14.972"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:42.989" endtime="20210908 00:26:43.096"></status>
+<status status="PASS" starttime="20210908 09:17:14.878" endtime="20210908 09:17:14.972"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -519,7 +519,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.097" endtime="20210908 00:26:43.123"></status>
+<status status="PASS" starttime="20210908 09:17:14.973" endtime="20210908 09:17:14.996"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -527,17 +527,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.123" endtime="20210908 00:26:43.153"></status>
+<status status="PASS" starttime="20210908 09:17:14.997" endtime="20210908 09:17:15.023"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:43.153" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select'.</msg>
-<status status="PASS" starttime="20210908 00:26:43.153" endtime="20210908 00:26:43.225"></status>
+<msg timestamp="20210908 09:17:15.023" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select'.</msg>
+<status status="PASS" starttime="20210908 09:17:15.023" endtime="20210908 09:17:15.089"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:43.096" endtime="20210908 00:26:43.226"></status>
+<status status="PASS" starttime="20210908 09:17:14.973" endtime="20210908 09:17:15.089"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -549,7 +549,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.227" endtime="20210908 00:26:43.261"></status>
+<status status="PASS" starttime="20210908 09:17:15.090" endtime="20210908 09:17:15.120"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -557,17 +557,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.261" endtime="20210908 00:26:43.290"></status>
+<status status="PASS" starttime="20210908 09:17:15.120" endtime="20210908 09:17:15.144"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:43.291" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select/option[1]'.</msg>
-<status status="PASS" starttime="20210908 00:26:43.291" endtime="20210908 00:26:43.326"></status>
+<msg timestamp="20210908 09:17:15.145" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[4]/div[2]/select/option[1]'.</msg>
+<status status="PASS" starttime="20210908 09:17:15.144" endtime="20210908 09:17:15.174"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:43.226" endtime="20210908 00:26:43.326"></status>
+<status status="PASS" starttime="20210908 09:17:15.090" endtime="20210908 09:17:15.175"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -579,7 +579,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.327" endtime="20210908 00:26:43.356"></status>
+<status status="PASS" starttime="20210908 09:17:15.176" endtime="20210908 09:17:15.198"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -587,17 +587,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.356" endtime="20210908 00:26:43.385"></status>
+<status status="PASS" starttime="20210908 09:17:15.198" endtime="20210908 09:17:15.221"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:43.385" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select'.</msg>
-<status status="PASS" starttime="20210908 00:26:43.385" endtime="20210908 00:26:43.457"></status>
+<msg timestamp="20210908 09:17:15.221" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select'.</msg>
+<status status="PASS" starttime="20210908 09:17:15.221" endtime="20210908 09:17:15.286"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:43.326" endtime="20210908 00:26:43.458"></status>
+<status status="PASS" starttime="20210908 09:17:15.175" endtime="20210908 09:17:15.286"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -609,7 +609,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.459" endtime="20210908 00:26:43.496"></status>
+<status status="PASS" starttime="20210908 09:17:15.287" endtime="20210908 09:17:15.321"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -617,17 +617,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.496" endtime="20210908 00:26:43.584"></status>
+<status status="PASS" starttime="20210908 09:17:15.321" endtime="20210908 09:17:15.347"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:43.585" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[5]'.</msg>
-<status status="PASS" starttime="20210908 00:26:43.584" endtime="20210908 00:26:43.633"></status>
+<msg timestamp="20210908 09:17:15.348" level="INFO">Clicking element '//*[@id="inputGroupSummaryContainer"]/div/div[5]/div[2]/select/option[5]'.</msg>
+<status status="PASS" starttime="20210908 09:17:15.348" endtime="20210908 09:17:15.388"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:43.458" endtime="20210908 00:26:43.634"></status>
+<status status="PASS" starttime="20210908 09:17:15.287" endtime="20210908 09:17:15.388"></status>
 </kw>
 <kw name="Click an Element" library="Stly_Keywords">
 <arguments>
@@ -639,7 +639,7 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.635" endtime="20210908 00:26:43.666"></status>
+<status status="PASS" starttime="20210908 09:17:15.390" endtime="20210908 09:17:15.418"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -647,17 +647,17 @@
 <arg>${element}</arg>
 <arg>timeout=${WEB_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:43.666" endtime="20210908 00:26:43.692"></status>
+<status status="PASS" starttime="20210908 09:17:15.418" endtime="20210908 09:17:15.443"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:43.692" level="INFO">Clicking element '//*[@id="modal-container"]/div[2]/div[3]/button'.</msg>
-<status status="PASS" starttime="20210908 00:26:43.692" endtime="20210908 00:26:44.050"></status>
+<msg timestamp="20210908 09:17:15.443" level="INFO">Clicking element '//*[@id="modal-container"]/div[2]/div[3]/button'.</msg>
+<status status="PASS" starttime="20210908 09:17:15.443" endtime="20210908 09:17:15.757"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:43.635" endtime="20210908 00:26:44.051"></status>
+<status status="PASS" starttime="20210908 09:17:15.389" endtime="20210908 09:17:15.758"></status>
 </kw>
 <kw name="Wait Until File Download is Finished" library="Resource">
 <assign>
@@ -687,11 +687,11 @@
 <assign>
 <var>${files}</var>
 </assign>
-<msg timestamp="20210908 00:26:44.057" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
-<msg timestamp="20210908 00:26:44.059" level="INFO">0 files:
+<msg timestamp="20210908 09:17:15.763" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
+<msg timestamp="20210908 09:17:15.763" level="INFO">0 files:
 </msg>
-<msg timestamp="20210908 00:26:44.059" level="INFO">${files} = []</msg>
-<status status="PASS" starttime="20210908 00:26:44.055" endtime="20210908 00:26:44.059"></status>
+<msg timestamp="20210908 09:17:15.764" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20210908 09:17:15.762" endtime="20210908 09:17:15.764"></status>
 </kw>
 <kw name="Length Should Be" library="BuiltIn">
 <doc>Verifies that the length of the given item is correct.</doc>
@@ -699,11 +699,11 @@
 <arg>${files}</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20210908 00:26:44.060" level="INFO">Length is 0</msg>
-<msg timestamp="20210908 00:26:44.060" level="FAIL">Length of '[]' should be 1 but is 0.</msg>
-<status status="FAIL" starttime="20210908 00:26:44.059" endtime="20210908 00:26:44.060"></status>
+<msg timestamp="20210908 09:17:15.765" level="INFO">Length is 0</msg>
+<msg timestamp="20210908 09:17:15.765" level="FAIL">Length of '[]' should be 1 but is 0.</msg>
+<status status="FAIL" starttime="20210908 09:17:15.764" endtime="20210908 09:17:15.765"></status>
 </kw>
-<status status="FAIL" starttime="20210908 00:26:44.054" endtime="20210908 00:26:44.061"></status>
+<status status="FAIL" starttime="20210908 09:17:15.761" endtime="20210908 09:17:15.765"></status>
 </kw>
 <kw name="Download Should Be Done" library="Resource">
 <doc>Verifies that the directory has only one folder and it is not a temp file and returns path to the file</doc>
@@ -718,11 +718,11 @@
 <assign>
 <var>${files}</var>
 </assign>
-<msg timestamp="20210908 00:26:46.070" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
-<msg timestamp="20210908 00:26:46.071" level="INFO">1 file:
-PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx.crdownload</msg>
-<msg timestamp="20210908 00:26:46.071" level="INFO">${files} = ['PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx.crdownload']</msg>
-<status status="PASS" starttime="20210908 00:26:46.070" endtime="20210908 00:26:46.071"></status>
+<msg timestamp="20210908 09:17:17.779" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
+<msg timestamp="20210908 09:17:17.779" level="INFO">1 file:
+ef7967aa-49a2-426d-b213-fdac77594087.tmp</msg>
+<msg timestamp="20210908 09:17:17.780" level="INFO">${files} = ['ef7967aa-49a2-426d-b213-fdac77594087.tmp']</msg>
+<status status="PASS" starttime="20210908 09:17:17.779" endtime="20210908 09:17:17.780"></status>
 </kw>
 <kw name="Length Should Be" library="BuiltIn">
 <doc>Verifies that the length of the given item is correct.</doc>
@@ -730,8 +730,8 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx.crdownload<
 <arg>${files}</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20210908 00:26:46.072" level="INFO">Length is 1</msg>
-<status status="PASS" starttime="20210908 00:26:46.072" endtime="20210908 00:26:46.072"></status>
+<msg timestamp="20210908 09:17:17.780" level="INFO">Length is 1</msg>
+<status status="PASS" starttime="20210908 09:17:17.780" endtime="20210908 09:17:17.780"></status>
 </kw>
 <kw name="Should Not Match Regexp" library="BuiltIn">
 <doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
@@ -739,18 +739,10 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx.crdownload<
 <arg>${files[0]}</arg>
 <arg>(?i).*\\.tmp</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:46.072" endtime="20210908 00:26:46.073"></status>
+<msg timestamp="20210908 09:17:17.781" level="FAIL">'ef7967aa-49a2-426d-b213-fdac77594087.tmp' matches '(?i).*\.tmp'</msg>
+<status status="FAIL" starttime="20210908 09:17:17.780" endtime="20210908 09:17:17.781"></status>
 </kw>
-<kw name="Should Not Match Regexp" library="BuiltIn">
-<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
-<arguments>
-<arg>${files[0]}</arg>
-<arg>(?i).*\\.crdownload</arg>
-</arguments>
-<msg timestamp="20210908 00:26:46.074" level="FAIL">'PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx.crdownload' matches '(?i).*\.crdownload'</msg>
-<status status="FAIL" starttime="20210908 00:26:46.074" endtime="20210908 00:26:46.075"></status>
-</kw>
-<status status="FAIL" starttime="20210908 00:26:46.069" endtime="20210908 00:26:46.075"></status>
+<status status="FAIL" starttime="20210908 09:17:17.778" endtime="20210908 09:17:17.781"></status>
 </kw>
 <kw name="Download Should Be Done" library="Resource">
 <doc>Verifies that the directory has only one folder and it is not a temp file and returns path to the file</doc>
@@ -765,11 +757,11 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx.crdownload<
 <assign>
 <var>${files}</var>
 </assign>
-<msg timestamp="20210908 00:26:48.085" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
-<msg timestamp="20210908 00:26:48.086" level="INFO">1 file:
+<msg timestamp="20210908 09:17:19.783" level="INFO" html="yes">Listing contents of directory '&lt;a href="file://C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads"&gt;C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads&lt;/a&gt;'.</msg>
+<msg timestamp="20210908 09:17:19.783" level="INFO">1 file:
 PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
-<msg timestamp="20210908 00:26:48.086" level="INFO">${files} = ['PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx']</msg>
-<status status="PASS" starttime="20210908 00:26:48.085" endtime="20210908 00:26:48.086"></status>
+<msg timestamp="20210908 09:17:19.784" level="INFO">${files} = ['PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx']</msg>
+<status status="PASS" starttime="20210908 09:17:19.782" endtime="20210908 09:17:19.784"></status>
 </kw>
 <kw name="Length Should Be" library="BuiltIn">
 <doc>Verifies that the length of the given item is correct.</doc>
@@ -777,8 +769,8 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <arg>${files}</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20210908 00:26:48.087" level="INFO">Length is 1</msg>
-<status status="PASS" starttime="20210908 00:26:48.087" endtime="20210908 00:26:48.087"></status>
+<msg timestamp="20210908 09:17:19.784" level="INFO">Length is 1</msg>
+<status status="PASS" starttime="20210908 09:17:19.784" endtime="20210908 09:17:19.784"></status>
 </kw>
 <kw name="Should Not Match Regexp" library="BuiltIn">
 <doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
@@ -786,7 +778,7 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <arg>${files[0]}</arg>
 <arg>(?i).*\\.tmp</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:48.087" endtime="20210908 00:26:48.088"></status>
+<status status="PASS" starttime="20210908 09:17:19.785" endtime="20210908 09:17:19.785"></status>
 </kw>
 <kw name="Should Not Match Regexp" library="BuiltIn">
 <doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
@@ -794,7 +786,7 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <arg>${files[0]}</arg>
 <arg>(?i).*\\.crdownload</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:48.088" endtime="20210908 00:26:48.088"></status>
+<status status="PASS" starttime="20210908 09:17:19.785" endtime="20210908 09:17:19.786"></status>
 </kw>
 <kw name="Join Path" library="OperatingSystem">
 <doc>Joins the given path part(s) to the given base path.</doc>
@@ -805,25 +797,29 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <assign>
 <var>${file}</var>
 </assign>
-<msg timestamp="20210908 00:26:48.089" level="INFO">${file} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
-<status status="PASS" starttime="20210908 00:26:48.089" endtime="20210908 00:26:48.089"></status>
+<msg timestamp="20210908 09:17:19.787" level="INFO">${file} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
+<status status="PASS" starttime="20210908 09:17:19.786" endtime="20210908 09:17:19.787"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>File was successfully downloaded to ${file}</arg>
 </arguments>
-<msg timestamp="20210908 00:26:48.090" level="INFO">File was successfully downloaded to C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
-<status status="PASS" starttime="20210908 00:26:48.090" endtime="20210908 00:26:48.090"></status>
+<msg timestamp="20210908 09:17:19.787" level="INFO">File was successfully downloaded to C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
+<status status="PASS" starttime="20210908 09:17:19.787" endtime="20210908 09:17:19.787"></status>
 </kw>
-<status status="PASS" starttime="20210908 00:26:48.084" endtime="20210908 00:26:48.090"></status>
+<status status="PASS" starttime="20210908 09:17:19.781" endtime="20210908 09:17:19.788"></status>
 </kw>
-<msg timestamp="20210908 00:26:48.090" level="INFO">${fileName} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
-<status status="PASS" starttime="20210908 00:26:44.053" endtime="20210908 00:26:48.090"></status>
+<msg timestamp="20210908 09:17:19.788" level="INFO">${fileName} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
+<status status="PASS" starttime="20210908 09:17:15.760" endtime="20210908 09:17:19.788"></status>
 </kw>
-<msg timestamp="20210908 00:26:48.091" level="INFO">${filename} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
-<status status="PASS" starttime="20210908 00:26:44.052" endtime="20210908 00:26:48.091"></status>
+<msg timestamp="20210908 09:17:19.788" level="INFO">${filename} = C:\Users\chunter4\Documents\GitHub\stly_demo\TestData\Downloads\PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
+<status status="PASS" starttime="20210908 09:17:15.759" endtime="20210908 09:17:19.788"></status>
 </kw>
+<kw name="Return Column Compare List">
+<assign>
+<var>${col_list}</var>
+</assign>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <arguments>
@@ -831,7 +827,6 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <arg>2</arg>
 <arg>3</arg>
 <arg>4</arg>
-<arg>5</arg>
 <arg>6</arg>
 <arg>7</arg>
 <arg>8</arg>
@@ -849,8 +844,11 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <assign>
 <var>${col_list}</var>
 </assign>
-<msg timestamp="20210908 00:26:48.092" level="INFO">${col_list} = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']</msg>
-<status status="PASS" starttime="20210908 00:26:48.091" endtime="20210908 00:26:48.092"></status>
+<msg timestamp="20210908 09:17:19.790" level="INFO">${col_list} = ['1', '2', '3', '4', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']</msg>
+<status status="PASS" starttime="20210908 09:17:19.790" endtime="20210908 09:17:19.790"></status>
+</kw>
+<msg timestamp="20210908 09:17:19.790" level="INFO">${col_list} = ['1', '2', '3', '4', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']</msg>
+<status status="PASS" starttime="20210908 09:17:19.790" endtime="20210908 09:17:19.790"></status>
 </kw>
 <kw name="Compare Excel Files" library="Excel">
 <arguments>
@@ -862,11 +860,11 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210908 00:26:48.483" level="INFO">No data differences found.</msg>
-<msg timestamp="20210908 00:26:48.483" level="INFO">c:\python37\lib\site-packages\openpyxl\styles\stylesheet.py:221: UserWarning: Workbook contains no default style, apply openpyxl's default
+<msg timestamp="20210908 09:17:20.093" level="INFO">No data differences found.</msg>
+<msg timestamp="20210908 09:17:20.094" level="INFO">c:\python37\lib\site-packages\openpyxl\styles\stylesheet.py:221: UserWarning: Workbook contains no default style, apply openpyxl's default
   warn("Workbook contains no default style, apply openpyxl's default")</msg>
-<msg timestamp="20210908 00:26:48.484" level="INFO">${result} = True</msg>
-<status status="PASS" starttime="20210908 00:26:48.092" endtime="20210908 00:26:48.484"></status>
+<msg timestamp="20210908 09:17:20.094" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20210908 09:17:19.791" endtime="20210908 09:17:20.094"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -875,7 +873,7 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <arg>fail</arg>
 <arg>Differences found comparing xlsx files!</arg>
 </arguments>
-<status status="PASS" starttime="20210908 00:26:48.485" endtime="20210908 00:26:48.485"></status>
+<status status="PASS" starttime="20210908 09:17:20.096" endtime="20210908 09:17:20.096"></status>
 </kw>
 <kw name="Compare Excel Files" library="Excel">
 <arguments>
@@ -887,11 +885,10 @@ PerformanceDetail-Campaign-6be18d5b-d554-4a6e-b7fa-855812db8dd4.xlsx</msg>
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210908 00:26:48.865" level="INFO">Data difference found in row 6, column 3. Spreadsheet1 value: 1234 != Spreadsheet2 value: 6201577249
-Data difference found in row 8, column 5. Spreadsheet1 value: test != Spreadsheet2 value: AMG - Bart Durham Non Skip - Feb. 2020
+<msg timestamp="20210908 09:17:20.287" level="INFO">Data difference found in row 6, column 3. Spreadsheet1 value: 1234 != Spreadsheet2 value: 6201577249
 Data differences found.</msg>
-<msg timestamp="20210908 00:26:48.865" level="INFO">${result} = False</msg>
-<status status="PASS" starttime="20210908 00:26:48.486" endtime="20210908 00:26:48.865"></status>
+<msg timestamp="20210908 09:17:20.287" level="INFO">${result} = False</msg>
+<status status="PASS" starttime="20210908 09:17:20.097" endtime="20210908 09:17:20.287"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -905,19 +902,19 @@ Data differences found.</msg>
 <arguments>
 <arg>Differences found comparing xlsx files!</arg>
 </arguments>
-<msg timestamp="20210908 00:26:48.868" level="FAIL">Differences found comparing xlsx files!</msg>
-<status status="FAIL" starttime="20210908 00:26:48.867" endtime="20210908 00:26:48.868"></status>
+<msg timestamp="20210908 09:17:20.289" level="FAIL">Differences found comparing xlsx files!</msg>
+<status status="FAIL" starttime="20210908 09:17:20.289" endtime="20210908 09:17:20.289"></status>
 </kw>
-<status status="FAIL" starttime="20210908 00:26:48.866" endtime="20210908 00:26:48.868"></status>
+<status status="FAIL" starttime="20210908 09:17:20.289" endtime="20210908 09:17:20.289"></status>
 </kw>
-<status status="FAIL" starttime="20210908 00:26:25.388" endtime="20210908 00:26:48.868" critical="yes">Differences found comparing xlsx files!</status>
+<status status="FAIL" starttime="20210908 09:17:02.932" endtime="20210908 09:17:20.290" critical="yes">Differences found comparing xlsx files!</status>
 </test>
 <kw name="Close All Browsers" library="Selenium2Library" type="teardown">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20210908 00:26:48.871" endtime="20210908 00:26:51.324"></status>
+<status status="PASS" starttime="20210908 09:17:20.292" endtime="20210908 09:17:22.656"></status>
 </kw>
 <doc>Sightly Sanity Test Suite</doc>
-<status status="FAIL" starttime="20210908 00:26:23.828" endtime="20210908 00:26:51.325"></status>
+<status status="FAIL" starttime="20210908 09:17:01.537" endtime="20210908 09:17:22.656"></status>
 </suite>
 <statistics>
 <total>

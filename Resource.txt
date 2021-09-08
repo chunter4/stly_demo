@@ -13,6 +13,9 @@ Library                           ScreenCapLibrary
 Library                           openpyxl
 Library                           PythonLib/Excel.py
 
+Resource                          Objects/Stly_Objects.txt
+Resource                          Keywords/Stly_Keywords.txt
+
 
 *** Variables ***
 ${SEL_SPEED}                        0.2s

@@ -1,8 +1,7 @@
 *** Settings ***
 Documentation       Sightly Sanity Test Suite
+
 Resource            ../Resource.txt
-Resource            ./Objects/Stly_Objects.txt
-Resource            ./Keywords/Stly_Keywords.txt
 
 Suite Setup         Set URL And User Credentials
 Suite Teardown      Close All Browsers
@@ -12,7 +11,12 @@ Test Setup          Set Selenium Timeout    ${STD_WAIT}
 *** Variables ***
 ${good_baseline_xlsx}    .\\TestData\\PerformanceDetail_Campaign_Baseline_Good.xlsx
 ${bad_baseline_xlsx}     .\\TestData\\PerformanceDetail_Campaign_Baseline_Bad.xlsx
-${cols2compare}     1    2    3    4    5    6    7    8    9    10    11    12    13    14    15    16    17    18
+
+
+*** Keywords ***
+Return Column Compare List
+    ${col_list}=    Create List    1    2    3    4    5    6    7    8    9    10    11    12    13    14    15    16    17    18
+    [Return]    ${col_list}
 
 
 *** Test Cases ***
@@ -51,12 +55,16 @@ Order Sanity Test
     #Click Run Reports button
     Click an Element    ${button_reportgen_runreports}
 
+    #Wait until the file completes downloading and return the filename
     ${filename}=    Wait Until File Download is Finished
 
-    ${col_list}=    Create List    1    2    3    4    5    6    7    8    9    10    11    12    13    14    15    16    17    18
+    #Get the list of columns to compare
+    ${col_list}=    Return Column Compare List
 
+    #Compare against a known good baseline
     ${result}=    compare_excel_files    ${good_baseline_xlsx}    ${filename}    6    ${col_list}
     Run Keyword If    ${result}==${False}    fail    Differences found comparing xlsx files!
 
+    #Compare against a known bad baseline
     ${result}=    compare_excel_files    ${bad_baseline_xlsx}    ${filename}    6    ${col_list}
     Run Keyword If    ${result}==${False}    fail    Differences found comparing xlsx files!
